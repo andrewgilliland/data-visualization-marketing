@@ -1,10 +1,29 @@
-const Button = ({}) => {
+import { FC } from "react";
+
+type ButtonProps = {
+  children: React.ReactNode;
+  iconPosition?: "left" | "right";
+};
+
+const Button: FC<ButtonProps> = ({ children, iconPosition = "right" }) => {
+  const iconPositionLeft = iconPosition === "left";
+
   return (
-    <button className="group bg-black pl-4 pr-3 py-2 rounded-md font-bold font-heading text-xl">
-      <div className="flex items-center gap-2">
-        <div>Next</div>
+    <button
+      className={`group bg-black ${
+        iconPositionLeft ? "pl-3 pr-4" : "pl-4 pr-3"
+      } py-2 rounded-md font-bold font-heading text-xl`}
+    >
+      <div
+        className={`flex ${
+          iconPositionLeft ? "flex-row-reverse" : "flex-row"
+        } items-center gap-2.5`}
+      >
+        <div>{children}</div>
         <svg
-          className="stroke-[3] stroke-current stroke-round fill-none"
+          className={`${
+            iconPositionLeft && "rotate-180"
+          } stroke-[3] stroke-current stroke-round fill-none`}
           width="10"
           height="10"
           viewBox="0 0 10 10"

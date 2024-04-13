@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Button from "@/components/Button";
 
-export default function PageOne() {
+export default function PageTwo() {
   return (
     <div>
       <h1 className="font-bold font-heading text-slate-900 text-3xl">
-        Page One
+        Page Two
       </h1>
       <p className="font-medium text-lg text-slate-900 mt-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
@@ -16,7 +16,11 @@ export default function PageOne() {
         vitae magni. Commodi, cum officia?
       </p>
 
-      <div className="flex justify-end pt-12">
+      <div className="flex justify-between items-center pt-12">
+        <Link className="" href="/page/1">
+          <Button iconPosition="left">Prev</Button>
+        </Link>
+
         <Link className="" href="/page/2">
           <Button>Next</Button>
         </Link>

@@ -20,5 +20,10 @@ const config: Config = {
     },
   },
   plugins: [],
+  safelist: [
+    {
+      pattern: /(p)-(l|r)-(3|4)/,
+    },
+  ],
 };
 export default config;
