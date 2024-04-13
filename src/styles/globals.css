@@ -31,3 +31,8 @@ body {
     text-wrap: balance;
   }
 }
+
+.stroke-round {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}

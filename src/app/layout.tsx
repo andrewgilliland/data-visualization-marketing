@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces, Source_Sans_3 } from "next/font/google";
-import "./globals.css";
+import { Fraunces, Source_Sans_3 } from "next/font/google";
+import "../styles/globals.css";
 
 const fraunces = Fraunces({ subsets: ["latin"], variable: "--font-fraunces" });
 const sourceSans3 = Source_Sans_3({
