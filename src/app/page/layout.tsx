@@ -7,15 +7,17 @@ export default function RootLayout({
 }>) {
   return (
     <div>
-      <div className="flex border-b-2 border-slate-900 px-[5%] py-4 shadow-lg">
-        <Link className="group" href="/">
-          <h1 className="font-semibold font-heading text-2xl text-slate-900">
-            Data Visualization in Marketing
-          </h1>
-          <div className="bg-slate-900 h-[2px] w-[0%] group-hover:w-full transition-all duration-500" />
-        </Link>
+      <div className="flex border-b-2 border-slate-900 shadow-lg">
+        <div className="mx-auto py-4 w-[52rem]">
+          <Link className="group" href="/">
+            <h1 className="font-semibold font-heading text-2xl text-slate-900">
+              Data Visualization in Marketing
+            </h1>
+            <div className="bg-slate-900 h-[2px] w-[0%] group-hover:w-full transition-all duration-500" />
+          </Link>
+        </div>
       </div>
-      <div className="bg-white flex shadow-lg min-h-screen mx-32 p-5 md:p-16">
+      <div className="bg-white flex shadow-lg min-h-screen max-w-3xl mx-auto p-5 md:p-16">
         <article className="max-w-screen-sm">{children}</article>
       </div>
     </div>

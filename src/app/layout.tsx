@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${fraunces.variable} ${sourceSans3.variable}`}>
-        <main className="bg-slate-50 min-h-screen">{children}</main>
+        <main className="bg-slate-50 min-h-screen ">{children}</main>
       </body>
     </html>
   );

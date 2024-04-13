@@ -10,7 +10,7 @@ export default function PageOne() {
   ];
 
   return (
-    <div>
+    <div className="selection:bg-orange-600">
       <h1 className="font-bold font-heading text-slate-900 text-3xl">
         Pop Quiz
       </h1>
