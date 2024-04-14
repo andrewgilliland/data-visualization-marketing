@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Button from "@/components/Button";
+import Question from "@/components/Question";
 
 export default function PageTwo() {
   return (
@@ -13,11 +14,20 @@ export default function PageTwo() {
         </p>
       </div>
       <div className="mt-8">
-        <p className="font-medium text-lg text-slate-900">
-          Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro
-          ea necessitatibus culpa animi cum excepturi consequatur reiciendis
-          nam?
-        </p>
+        <Question
+          question="1. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
+          answer="True"
+        />
+        <Question
+          className="mt-4"
+          question="2. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
+          answer="True"
+        />
+        <Question
+          className="mt-4"
+          question="3. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
+          answer="True"
+        />
       </div>
 
       <div className="flex justify-between items-center pt-12">

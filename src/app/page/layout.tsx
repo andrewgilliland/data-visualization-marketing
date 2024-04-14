@@ -1,10 +1,13 @@
+"use client";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const router = useRouter();
   return (
     <div>
       <div className="border-b-2 border-slate-900 shadow-lg">
