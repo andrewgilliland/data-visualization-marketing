@@ -14,9 +14,7 @@ const ArticleLayout: FC<BaseLayoutProps> = ({ title, children, page }) => {
       <h1 className="font-bold font-heading text-slate-900 text-3xl">
         {title}
       </h1>
-      <article className="max-w-screen-sm border border-red-500">
-        {children}
-      </article>
+      <article className="max-w-screen-sm">{children}</article>
       <div className="flex justify-between items-center pt-12">
         <Link
           className={page === 1 ? "invisible" : ""}
