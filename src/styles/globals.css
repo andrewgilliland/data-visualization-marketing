@@ -39,11 +39,11 @@ body {
 
 ::-moz-selection {
   /* Code for Firefox */
-  color: red;
-  background: yellow;
+  color: theme("colors.white");
+  background: theme("colors.orange.600");
 }
 
 ::selection {
-  color: red;
-  background: yellow;
+  color: theme("colors.white");
+  background: theme("colors.orange.600");
 }
