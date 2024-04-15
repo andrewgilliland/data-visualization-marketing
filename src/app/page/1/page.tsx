@@ -1,5 +1,6 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Table from "@/components/Table";
+import Text from "@/components/Text";
 
 export default function PageOne() {
   const headings = ["Name", "Age", "Country"];
@@ -12,11 +13,11 @@ export default function PageOne() {
 
   return (
     <ArticleLayout title="Pop Quiz" page={1}>
-      <p className="font-medium text-lg text-slate-900 mt-8">
-        Look at the table below. You have{" "}
-        <span className="font-bold">five</span> seconds. Then click the
+      <Text className="mt-8">
+        Look at the table below. You can only look for{" "}
+        <span className="font-bold">five</span> seconds!!! Then click the
         &quot;Next&quot; button.
-      </p>
+      </Text>
 
       <div className="flex justify-center mt-16">
         <Table headings={headings} data={data} />

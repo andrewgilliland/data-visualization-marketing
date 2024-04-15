@@ -1,4 +1,5 @@
 import { FC } from "react";
+import Text from "./Text";
 
 type QuestionProps = {
   question: string;
@@ -8,11 +9,11 @@ type QuestionProps = {
 
 const Question: FC<QuestionProps> = ({ question, answer, className }) => {
   return (
-    <div className={`group font-medium text-lg text-slate-900 ${className}`}>
-      <p className="font-medium text-lg text-slate-900">{question}</p>
-      <p className="transition opacity-0 group-hover:opacity-100 pt-2">
+    <div className={`group ${className}`}>
+      <Text className="">{question}</Text>
+      <Text className="transition opacity-0 group-hover:opacity-100 pt-2">
         {answer}
-      </p>
+      </Text>
     </div>
   );
 };
