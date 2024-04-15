@@ -1,13 +1,11 @@
-"use client";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { ReactNode } from "react";
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  const router = useRouter();
+type PageLayoutProps = {
+  children: ReactNode;
+};
+
+export default function PageLayout({ children }: PageLayoutProps) {
   return (
     <div>
       <div className="border-b-2 border-slate-900 shadow-lg">
@@ -20,8 +18,8 @@ export default function RootLayout({
           </Link>
         </div>
       </div>
-      <div className="bg-white flex shadow-lg min-h-screen max-w-3xl mx-auto p-5 md:p-16">
-        <article className="max-w-screen-sm">{children}</article>
+      <div className="flex flex-col bg-white shadow-lg min-h-screen max-w-3xl mx-auto p-5 md:p-16">
+        {children}
       </div>
     </div>
   );

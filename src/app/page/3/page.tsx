@@ -1,13 +1,9 @@
-import Link from "next/link";
-import Button from "@/components/Button";
+import ArticleLayout from "@/components/layouts/ArticleLayout";
 import BarChart from "@/components/charts/BarChart";
 
 export default function PageThree() {
   return (
-    <div>
-      <h1 className="font-bold font-heading text-slate-900 text-3xl">
-        Pop Quiz 2
-      </h1>
+    <ArticleLayout title="Quiz 2" page={3}>
       <p className="font-medium text-lg text-slate-900 mt-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
         obcaecati illum ad!
@@ -16,16 +12,6 @@ export default function PageThree() {
       <div className="h-96">
         <BarChart />
       </div>
-
-      <div className="flex justify-between items-center pt-12">
-        <Link className="" href="/page/2">
-          <Button iconPosition="left">Prev</Button>
-        </Link>
-
-        <Link className="" href="/page/4">
-          <Button>Next</Button>
-        </Link>
-      </div>
-    </div>
+    </ArticleLayout>
   );
 }

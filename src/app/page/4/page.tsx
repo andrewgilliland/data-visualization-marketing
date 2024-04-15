@@ -1,12 +1,8 @@
-import Link from "next/link";
-import Button from "@/components/Button";
+import ArticleLayout from "@/components/layouts/ArticleLayout";
 
 export default function PageFour() {
   return (
-    <div>
-      <h1 className="font-bold font-heading text-slate-900 text-3xl">
-        Page Four
-      </h1>
+    <ArticleLayout title="Questions" page={4}>
       <p className="font-medium text-lg text-slate-900 mt-8">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
         obcaecati illum ad! Dignissimos, sequi, incidunt repellat, vero a
@@ -15,16 +11,6 @@ export default function PageFour() {
         fuga consectetur asperiores animi laboriosam iste, dolore nobis quam, ab
         vitae magni. Commodi, cum officia?
       </p>
-
-      <div className="flex justify-between items-center pt-12">
-        <Link className="" href="/page/3">
-          <Button iconPosition="left">Prev</Button>
-        </Link>
-
-        <Link className="" href="/page/5">
-          <Button>Next</Button>
-        </Link>
-      </div>
-    </div>
+    </ArticleLayout>
   );
 }
