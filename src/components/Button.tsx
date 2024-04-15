@@ -19,7 +19,7 @@ const Button: FC<ButtonProps> = ({ children, iconPosition = "right" }) => {
           iconPositionLeft ? "flex-row-reverse" : "flex-row"
         } items-center gap-2.5`}
       >
-        <div>{children}</div>
+        <div className="text-white">{children}</div>
         <svg
           className={`${
             iconPositionLeft && "rotate-180"

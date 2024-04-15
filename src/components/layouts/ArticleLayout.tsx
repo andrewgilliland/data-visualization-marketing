@@ -41,39 +41,27 @@ const ArticleLayout: FC<BaseLayoutProps> = ({ title, children, page }) => {
     // pressedButton(pressedButtons, 0);
 
     if (pressedButtons.join(" + ") === "0") {
-      console.log("Pressed button 0");
-      // console.log("pageNumber: ", pageNumber + 1);
+      // console.log("Pressed button 0");
+      console.log("pageNumber: ", pageNumber + 1);
       setPageNumber((prev) => prev + 1);
       console.log(`/page/${pageNumber}`);
       router.push(`/page/${pageNumber}`);
     }
   }
 
-  const pressedButton = (pressedButtons: number[], button: number): any => {
-    if (pressedButtons.join(" + ") === "0") {
-      console.log(`Pressed button ${button}`);
-      console.log("page: ", page + 1);
-      // router.push(`/page/${page + 1}`);
-    }
-  };
-
   useEffect(() => {
-    console.log("useEffect page: ----------------------------: ", pageNumber);
-
-    window.addEventListener("gamepadconnected", function (e) {
-      const gamepad = e.gamepad;
-      console.log(`Gamepad connected at index ${gamepad.index}: ${gamepad.id}.
-      ${gamepad.buttons.length} buttons, ${gamepad.axes.length} axes.`);
-
-      let interval;
-
-      if (!("ongamepadconnected" in window)) {
-        // No gamepad events available, poll instead.
-        interval = setInterval(pollGamepads, 300);
-      }
-    });
-
-    return () => window.removeEventListener("gamepadconnected", pollGamepads);
+    // console.log("useEffect page: ----------------------------: ", pageNumber);
+    // window.addEventListener("gamepadconnected", function (event) {
+    //   const gamepad = event.gamepad;
+    //   console.log(`Gamepad connected at index ${gamepad.index}: ${gamepad.id}.
+    //   ${gamepad.buttons.length} buttons, ${gamepad.axes.length} axes.`);
+    //   let interval;
+    //   if (!("ongamepadconnected" in window)) {
+    //     // No gamepad events available, poll instead.
+    //     interval = setInterval(pollGamepads, 100);
+    //   }
+    // });
+    // return () => window.removeEventListener("gamepadconnected", pollGamepads);
   }, [pageNumber]);
 
   return (
