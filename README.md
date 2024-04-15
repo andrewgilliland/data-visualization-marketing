@@ -18,4 +18,14 @@
 
 ## 9 - What is Data Visualization?
 
+## Why
+
 ## 10 - Types of Data Visualizations?
+
+## Bar Chart
+
+## Line Graph
+
+## Pie Chart
+
+## Maps
