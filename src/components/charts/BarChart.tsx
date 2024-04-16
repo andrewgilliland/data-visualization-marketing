@@ -1,4 +1,5 @@
 "use client";
+import { FC } from "react";
 import colors from "tailwindcss/colors";
 import {
   VictoryChart,
@@ -9,15 +10,19 @@ import {
   VictoryLabel,
 } from "victory";
 
-const BarChart = () => {
-  // console.log("victorytheme: ", VictoryTheme.material);
+type BarChartProps = {
+  data?: { x: string; y: number; fill: string }[];
+};
 
-  const data = [
+const BarChart: FC<BarChartProps> = ({
+  data = [
     { x: "Biff", y: 2, fill: colors.blue[500] },
     { x: "Tina", y: 3, fill: colors.green[500] },
     { x: "Egon", y: 5, fill: colors.red[500] },
     { x: "Whitney", y: 4, fill: colors.yellow[400] },
-  ];
+  ],
+}) => {
+  // console.log("victorytheme: ", VictoryTheme.material);
 
   const theme: VictoryThemeDefinition = {
     axis: {
