@@ -3,6 +3,7 @@ import Text from "@/components/Text";
 import BarChart from "@/components/charts/BarChart";
 import colors from "tailwindcss/colors";
 import LineChart from "@/components/charts/LineChart";
+import PieChart from "@/components/charts/PieChart";
 
 export default function PageNine() {
   return (
@@ -16,8 +17,8 @@ export default function PageNine() {
             { x: "D", y: 5, fill: colors.yellow[400] },
           ]}
         />
+        <PieChart />
         <LineChart />
-        <BarChart />
       </div>
       <div className="mt-4">
         <Text>
