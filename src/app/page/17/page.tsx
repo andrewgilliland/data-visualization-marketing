@@ -1,17 +1,9 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Text from "@/components/Text";
-import BarChart from "@/components/charts/BarChart";
-import LineChart from "@/components/charts/LineChart";
-import PieChart from "@/components/charts/PieChart";
 
-export default function PageNine() {
+export default function PageSeventeen() {
   return (
-    <ArticleLayout title="What is Data Visualization?" page={9}>
-      <div className="flex h-60">
-        <BarChart />
-        <PieChart />
-        <LineChart />
-      </div>
+    <ArticleLayout title="Tools for Creating Data Visualizations" page={17}>
       <div className="mt-4">
         <Text>
           Data visualization is a representation of data and information through

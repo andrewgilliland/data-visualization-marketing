@@ -1,16 +1,12 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Text from "@/components/Text";
 import BarChart from "@/components/charts/BarChart";
-import LineChart from "@/components/charts/LineChart";
-import PieChart from "@/components/charts/PieChart";
 
-export default function PageNine() {
+export default function PageThirteen() {
   return (
-    <ArticleLayout title="What is Data Visualization?" page={9}>
-      <div className="flex h-60">
+    <ArticleLayout title="Bar Charts" page={13}>
+      <div className="h-64">
         <BarChart />
-        <PieChart />
-        <LineChart />
       </div>
       <div className="mt-4">
         <Text>

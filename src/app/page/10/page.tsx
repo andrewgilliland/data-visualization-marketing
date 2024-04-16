@@ -1,7 +1,6 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Text from "@/components/Text";
 import BarChart from "@/components/charts/BarChart";
-import colors from "tailwindcss/colors";
 import LineChart from "@/components/charts/LineChart";
 import PieChart from "@/components/charts/PieChart";
 import Heading from "@/components/Heading";
@@ -10,14 +9,7 @@ export default function PageTen() {
   return (
     <ArticleLayout title="Why Use Data Visualizations?" page={10}>
       <div className="flex items-center gap-4 h-60">
-        <BarChart
-          data={[
-            { x: "A", y: 2, fill: colors.blue[500] },
-            { x: "B", y: 3, fill: colors.green[500] },
-            { x: "C", y: 4, fill: colors.red[500] },
-            { x: "D", y: 5, fill: colors.yellow[400] },
-          ]}
-        />
+        <BarChart />
         <div>
           <Heading sectionLevel="h2">Analyzing Patterns</Heading>
           <Text className="mt-2">

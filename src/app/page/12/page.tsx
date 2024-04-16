@@ -1,12 +1,11 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
+import Heading from "@/components/Heading";
 import Text from "@/components/Text";
 import BarChart from "@/components/charts/BarChart";
-import colors from "tailwindcss/colors";
 import LineChart from "@/components/charts/LineChart";
 import PieChart from "@/components/charts/PieChart";
-import Heading from "@/components/Heading";
 
-export default function PageEleven() {
+export default function PageTwelve() {
   return (
     <ArticleLayout title="Types of Data Visualizations" page={12}>
       <div className="mt-4">
@@ -25,15 +24,8 @@ export default function PageEleven() {
       </div>
       <div className="border grid grid-cols-3 gap-4">
         <div>
-          <BarChart
-            data={[
-              { x: "A", y: 2, fill: colors.blue[500] },
-              { x: "B", y: 3, fill: colors.green[500] },
-              { x: "C", y: 4, fill: colors.red[500] },
-              { x: "D", y: 5, fill: colors.yellow[400] },
-            ]}
-          />
           <Heading sectionLevel="h2">Bar Chart</Heading>
+          <BarChart />
         </div>
         <div>
           <Heading sectionLevel="h2">Pie Chart</Heading>
