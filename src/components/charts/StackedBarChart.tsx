@@ -1,7 +1,13 @@
 "use client";
 import { colorScale, theme } from "@/styles/theme";
 import { FC } from "react";
-import { VictoryAxis, VictoryBar, VictoryLabel, VictoryStack } from "victory";
+import {
+  VictoryAxis,
+  VictoryBar,
+  VictoryChart,
+  VictoryLabel,
+  VictoryStack,
+} from "victory";
 
 type StackBarChartProps = {
   dataset?: { x: string; y: number }[][];
@@ -32,18 +38,15 @@ const StackBarChart: FC<StackBarChartProps> = ({
   ],
 }) => {
   return (
-    <VictoryStack theme={theme}>
-      {/* <VictoryAxis
+    <VictoryChart theme={theme} domainPadding={30}>
+      <VictoryAxis
         dependentAxis
         tickLabelComponent={<VictoryLabel dx={-10} />}
         tickFormat={(tick: number) => `${Math.round(tick)}`}
       />
-      <VictoryAxis
-        tickLabelComponent={<VictoryLabel dy={10} />}
-        tickFormat={(tick: number) => `${Math.round(tick)}`}
-      /> */}
-      {dataset.map((data, index) => {
-        return (
+      <VictoryAxis tickLabelComponent={<VictoryLabel dy={10} />} />
+      <VictoryStack theme={theme}>
+        {dataset.map((data, index) => (
           <VictoryBar
             key={index}
             data={data}
@@ -51,9 +54,9 @@ const StackBarChart: FC<StackBarChartProps> = ({
               onLoad: { duration: 500 },
             }}
           />
-        );
-      })}
-    </VictoryStack>
+        ))}
+      </VictoryStack>
+    </VictoryChart>
   );
 };
 

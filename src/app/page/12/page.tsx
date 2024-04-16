@@ -7,6 +7,7 @@ import PieChart from "@/components/charts/PieChart";
 import Table from "@/components/Table";
 import AreaChart from "@/components/charts/AreaChart";
 import StackBarChart from "@/components/charts/StackedBarChart";
+import ScatterPlot from "@/components/charts/ScatterPlot";
 
 export default function PageTwelve() {
   return (
@@ -41,6 +42,18 @@ export default function PageTwelve() {
         <div className="flex flex-col justify-center items-center">
           <Heading sectionLevel="h2">Stacked Bar Chart</Heading>
           <StackBarChart />
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <Heading sectionLevel="h2">Scatter Plot</Heading>
+          <ScatterPlot />
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <Heading sectionLevel="h2">Histogram</Heading>
+          <ScatterPlot />
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <Heading sectionLevel="h2">Map</Heading>
+          <ScatterPlot />
         </div>
       </div>
     </ArticleLayout>

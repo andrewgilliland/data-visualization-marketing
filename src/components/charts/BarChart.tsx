@@ -2,13 +2,7 @@
 import { theme } from "@/styles/theme";
 import { FC } from "react";
 import colors from "tailwindcss/colors";
-import {
-  VictoryChart,
-  VictoryBar,
-  VictoryTheme,
-  VictoryAxis,
-  VictoryLabel,
-} from "victory";
+import { VictoryChart, VictoryBar, VictoryAxis, VictoryLabel } from "victory";
 
 type BarChartProps = {
   data?: { x: string; y: number; fill: string }[];
@@ -22,8 +16,6 @@ const BarChart: FC<BarChartProps> = ({
     { x: "D", y: 5, fill: colors.yellow[400] },
   ],
 }) => {
-  // console.log("victorytheme: ", VictoryTheme.material);
-
   return (
     <VictoryChart theme={theme} domainPadding={30}>
       <VictoryAxis

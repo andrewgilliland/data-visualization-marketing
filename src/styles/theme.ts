@@ -53,4 +53,13 @@ export const theme: VictoryThemeDefinition = {
   stack: {
     colorScale: colorScale,
   },
+  scatter: {
+    style: {
+      data: {
+        fill: colors.blue[500],
+        stroke: colors.slate[900],
+        strokeWidth: 1.5,
+      },
+    },
+  },
 };
