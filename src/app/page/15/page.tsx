@@ -34,21 +34,44 @@ export default function PageFifteen() {
 
   return (
     <ArticleLayout title="Pie Charts" page={15}>
-      <div className="flex flex-col h-96 mt-8">
+      <div className="flex flex-col h-96 mt-12">
         <h2 className="font-heading font-bold text-2xl text-blue-500">
           Who&apos;s still wearing{" "}
           <span className="text-orange-500">cargo shorts?</span>
         </h2>
-        <PieChart
-          data={data}
-          defaultData={data}
-          colorScale={colorScale}
-          innerRadius={75}
-          defaultInnerRadius={2}
-          labelColor="transparent"
-        />
+        <div className="flex">
+          <div className="w-1/2">
+            <div className="mt-2 p-2">
+              {data.map(({ x, y }, index) => {
+                return (
+                  <div key={index} className="p-1">
+                    <div
+                      style={{ backgroundColor: colorScale[index] }}
+                      className="inline-flex justify-center items-center border-2 border-slate-900 h-9 w-9 rounded-full"
+                    >
+                      <div className="text-slate-900 text-sm">{`${y}%`}</div>
+                    </div>
+                    <div className="inline font-medium text-slate-900 text-sm ml-2">
+                      {x}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+          <div className="w-1/2">
+            <PieChart
+              data={data}
+              defaultData={data}
+              colorScale={colorScale}
+              innerRadius={75}
+              defaultInnerRadius={2}
+              labelColor="transparent"
+            />
+          </div>
+        </div>
       </div>
-      <div className="mt-12">
+      <div className="mt-56">
         <Text>
           Data visualization is a representation of data and information through
           the use of graphics.
