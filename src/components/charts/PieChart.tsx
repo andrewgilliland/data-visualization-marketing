@@ -60,7 +60,7 @@ const PieChart: FC<PieChartProps> = ({
       style={{
         data: {
           stroke: colors.slate[900],
-          strokeWidth: 2,
+          strokeWidth: 1.5,
         },
       }}
       data={graphicData}

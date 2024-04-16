@@ -42,21 +42,19 @@ export default function PageFifteen() {
         <div className="flex">
           <div className="w-1/2">
             <div className="mt-2 p-2">
-              {data.map(({ x, y }, index) => {
-                return (
-                  <div key={index} className="p-1">
-                    <div
-                      style={{ backgroundColor: colorScale[index] }}
-                      className="inline-flex justify-center items-center border-2 border-slate-900 h-9 w-9 rounded-full"
-                    >
-                      <div className="text-slate-900 text-sm">{`${y}%`}</div>
-                    </div>
-                    <div className="inline font-medium text-slate-900 text-sm ml-2">
-                      {x}
-                    </div>
+              {data.map(({ x, y }, index) => (
+                <div key={index} className="p-1">
+                  <div
+                    style={{ backgroundColor: colorScale[index] }}
+                    className="inline-flex justify-center items-center border border-slate-900 h-9 w-9 rounded-full"
+                  >
+                    <div className="text-slate-900 text-sm">{`${y}%`}</div>
                   </div>
-                );
-              })}
+                  <div className="inline font-medium text-slate-900 text-sm ml-2">
+                    {x}
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div className="w-1/2">

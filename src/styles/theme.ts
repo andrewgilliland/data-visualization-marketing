@@ -7,9 +7,9 @@ export const theme: VictoryThemeDefinition = {
       tickLabels: {
         fill: colors.slate[900],
       },
-
       axis: {
         stroke: colors.slate[900],
+        strokeWidth: 1.5,
       },
       grid: {
         stroke: "transparent",
@@ -21,6 +21,8 @@ export const theme: VictoryThemeDefinition = {
       data: {
         fill: colors.blue[500],
         width: 40,
+        stroke: colors.slate[900],
+        strokeWidth: 1.5,
       },
     },
   },
