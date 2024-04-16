@@ -55,7 +55,7 @@ const PieChart: FC<PieChartProps> = ({
       innerRadius={graphicInnerRadius}
       colorScale={colorScale}
       animate={{
-        duration: 2000,
+        duration: 500,
       }}
       style={{
         data: {
