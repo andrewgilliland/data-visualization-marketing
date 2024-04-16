@@ -20,7 +20,7 @@ export default function PageFifteen() {
 
   const colorScale = [
     colors.cyan[500],
-    colors.emerald[500],
+    colors.emerald[600],
     colors.orange[500],
     colors.fuchsia[500],
     colors.pink[500],
@@ -41,7 +41,7 @@ export default function PageFifteen() {
         </h2>
         <div className="flex">
           <div className="w-1/2">
-            <div className="mt-2 p-2">
+            <div className="border-2 border-slate-900 rounded-lg mt-4 px-4 py-2">
               {data.map(({ x, y }, index) => (
                 <div key={index} className="p-1">
                   <div
@@ -71,8 +71,8 @@ export default function PageFifteen() {
       </div>
       <div className="mt-56">
         <Text>
-          Data visualization is a representation of data and information through
-          the use of graphics.
+          A pie chart is a circular statistical graphic, which is divided into
+          slices to illustrate numerical proportion.
         </Text>
         <Text className="mt-2">
           Charts, graphs, plots, maps, infographics are all types of data
