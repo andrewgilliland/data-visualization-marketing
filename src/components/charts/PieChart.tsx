@@ -1,12 +1,7 @@
 "use client";
 import { FC, useEffect, useState } from "react";
 import colors from "tailwindcss/colors";
-import {
-  VictoryContainer,
-  VictoryLabel,
-  VictoryLegend,
-  VictoryPie,
-} from "victory";
+import { VictoryLabel, VictoryPie } from "victory";
 
 type PieChartProps = {
   data?: { x: string; y: number }[];

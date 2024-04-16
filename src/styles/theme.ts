@@ -1,6 +1,13 @@
 import colors from "tailwindcss/colors";
 import { VictoryThemeDefinition } from "victory";
 
+export const colorScale = [
+  colors.blue[500],
+  colors.green[500],
+  colors.red[500],
+  colors.yellow[400],
+];
+
 export const theme: VictoryThemeDefinition = {
   axis: {
     style: {
@@ -33,5 +40,17 @@ export const theme: VictoryThemeDefinition = {
         strokeWidth: 3,
       },
     },
+  },
+  area: {
+    style: {
+      data: {
+        fill: colors.blue[500],
+        stroke: colors.slate[900],
+        strokeWidth: 1.5,
+      },
+    },
+  },
+  stack: {
+    colorScale: colorScale,
   },
 };

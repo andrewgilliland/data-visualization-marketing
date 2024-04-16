@@ -1,4 +1,4 @@
-# Data Visualization in Marketing
+# Data Visualization
 
 ## 1 - Table 1
 
@@ -22,6 +22,11 @@
 - Charts, graphs, plots, maps, infographics are all types of data visualizations.
 - These visual displays of data help communicate data relationships in a way that is easy to digest.
 
+- Idea Generation - Data visualizations can be leveraged during brainstorming sessions to align teams on the problem they are trying to solve.
+- Idea Illustration - Data visualizations are useful for conveying an idea. This can help abstract the idea of a tactic, process, or workflow.
+- Visual Discovery - Help assist in finding trends or patterns within a dataset.
+-
+
 ## 10 - Why Use Data Visualizations
 
 - Analyzing Patterns
@@ -36,6 +41,10 @@
 - Keep it simple
 
 ## 12 - Types of Data Visualizations
+
+- The earliest forms of data visualization were largely used to assist in navigation, and can be traced back to pre-17th century in Egypt.
+
+- Tables - Data organized into rows and columns. Tables show information in a structured way, but can overwelm users.
 
 ### 13 - Bar Chart
 

@@ -1,12 +1,23 @@
 import { FC } from "react";
 
 type TableProps = {
-  headings: string[];
-  data: string[][];
+  headings?: (string | number)[];
+  data?: (string | number)[][];
+  className?: string;
 };
 
-const Table: FC<TableProps> = ({ headings, data }) => (
-  <table className="table-auto text-slate-900 border-2 border-slate-900 rounded-md border-spacing-0 border-separate overflow-hidden">
+const Table: FC<TableProps> = ({
+  headings = ["A", "B", "C"],
+  data = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+  ],
+  className,
+}) => (
+  <table
+    className={`table-auto text-slate-900 border-2 border-slate-900 rounded-md border-spacing-0 border-separate overflow-hidden ${className}`}
+  >
     <thead className="bg-slate-100 border-slate-900">
       <tr>
         {headings.map((heading, index) => (
