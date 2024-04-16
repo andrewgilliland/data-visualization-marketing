@@ -4,6 +4,7 @@ import { FC, useEffect, useState } from "react";
 import Button from "../Button";
 import { useRouter } from "next/navigation";
 import { debounce } from "lodash";
+import Heading from "../Heading";
 
 type BaseLayoutProps = {
   title: string;
@@ -65,10 +66,8 @@ const ArticleLayout: FC<BaseLayoutProps> = ({ title, children, page }) => {
   }, [pageNumber]);
 
   return (
-    <div className="">
-      <h1 className="font-bold font-heading text-slate-900 text-3xl">
-        {title}
-      </h1>
+    <div>
+      <Heading sectionLevel="h1">{title}</Heading>
       <article className="max-w-screen-sm">{children}</article>
       <div className="flex justify-between items-center pt-12">
         <Link

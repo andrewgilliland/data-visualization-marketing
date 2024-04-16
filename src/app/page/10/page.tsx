@@ -4,6 +4,7 @@ import BarChart from "@/components/charts/BarChart";
 import colors from "tailwindcss/colors";
 import LineChart from "@/components/charts/LineChart";
 import PieChart from "@/components/charts/PieChart";
+import Heading from "@/components/Heading";
 
 export default function PageTen() {
   return (
@@ -18,9 +19,7 @@ export default function PageTen() {
           ]}
         />
         <div>
-          <h2 className="font-bold text-xl text-slate-900">
-            Analyzing Patterns
-          </h2>
+          <Heading sectionLevel="h2">Analyzing Patterns</Heading>
           <Text className="mt-2">
             Data visualization is a representation of data and information
             through the use of graphics.
@@ -29,9 +28,7 @@ export default function PageTen() {
       </div>
       <div className="flex items-center gap-4 h-60 mt-4">
         <div>
-          <h2 className="font-bold text-xl text-slate-900">
-            Breaking Down Complex Data
-          </h2>
+          <Heading sectionLevel="h2">Breaking Down Complex Data</Heading>
           <Text className="mt-2">
             Charts, graphs, plots, maps, infographics are all types of data
             visualizations.
@@ -42,14 +39,22 @@ export default function PageTen() {
       <div className="flex items-center gap-4 h-60 mt-4">
         <LineChart />
         <div>
-          <h2 className="font-bold text-xl text-slate-900">
-            Aid Creative Decisions
-          </h2>
+          <Heading sectionLevel="h2">Aid Creative Decisions</Heading>
           <Text className="mt-2">
             These visual displays of data help communicate data relationships in
             a way that is easy to digest.
           </Text>
         </div>
+      </div>
+      <div className="flex items-center gap-4 h-60 mt-4">
+        <div>
+          <Heading sectionLevel="h2">Data Driven Reports</Heading>
+          <Text className="mt-2">
+            Charts, graphs, plots, maps, infographics are all types of data
+            visualizations.
+          </Text>
+        </div>
+        <PieChart />
       </div>
     </ArticleLayout>
   );

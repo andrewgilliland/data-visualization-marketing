@@ -29,11 +29,13 @@
 - Creative Decisions
 - Data Driven Reports
 
-## 11 - Ways to Use Data Visualizations
+## 11 - Data Visualization Best Practices
 
--
+- Know Your Audience
+- Choose an effective visual
+- Keep it simple
 
-## 12 - Types of Data Visualizations?
+## 12 - Types of Data Visualizations
 
 ### 13 - Bar Chart
 
