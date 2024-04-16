@@ -35,7 +35,7 @@ const BarChart: FC<BarChartProps> = ({
       <VictoryBar
         animate={{
           // duration: 500,
-          onLoad: { duration: 1000 },
+          onLoad: { duration: 500 },
         }}
         style={{
           data: {
