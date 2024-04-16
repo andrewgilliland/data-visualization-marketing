@@ -7,7 +7,7 @@ export default function PageFifteen() {
   const data = [
     { x: "Adam Sandler on vacation", y: 1 },
     { x: "Adam Sandler everywhere else", y: 1 },
-    { x: "Pro wrestling Fans", y: 31 },
+    { x: "Pro wrestling fans", y: 31 },
     { x: "Photojournalists", y: 11 },
     { x: "Time travellers from 1999", y: 6 },
     { x: "Any guy yelling at his kids in public", y: 13 },

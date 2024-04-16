@@ -15,7 +15,7 @@ export default function PageFive() {
   ];
 
   return (
-    <ArticleLayout title="Quiz" page={5}>
+    <ArticleLayout title="Quiz 3" page={5}>
       <Text className="mt-8">
         Look at the table below. You have{" "}
         <span className="font-bold">five</span> seconds. Then click the

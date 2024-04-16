@@ -1,9 +1,9 @@
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Question from "@/components/Question";
 
-export default function PageFour() {
+export default function PageEight() {
   return (
-    <ArticleLayout title="Questions" page={4}>
+    <ArticleLayout title="Some More Questions" page={8}>
       <p className="font-medium text-slate-900 text-sm mt-1">
         (Hover questions for answers)
       </p>

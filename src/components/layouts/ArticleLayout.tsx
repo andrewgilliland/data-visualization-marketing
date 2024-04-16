@@ -50,18 +50,18 @@ const ArticleLayout: FC<BaseLayoutProps> = ({ title, children, page }) => {
   }
 
   useEffect(() => {
-    console.log("useEffect page: ----------------------------: ", pageNumber);
-    window.addEventListener("gamepadconnected", function (event) {
-      const gamepad = event.gamepad;
-      console.log(`Gamepad connected at index ${gamepad.index}: ${gamepad.id}.
-      ${gamepad.buttons.length} buttons, ${gamepad.axes.length} axes.`);
-      let interval;
-      if (!("ongamepadconnected" in window)) {
-        // No gamepad events available, poll instead.
-        interval = setInterval(pollGamepads, 100);
-      }
-    });
-    return () => window.removeEventListener("gamepadconnected", pollGamepads);
+    // console.log("useEffect page: ----------------------------: ", pageNumber);
+    // window.addEventListener("gamepadconnected", function (event) {
+    //   const gamepad = event.gamepad;
+    //   console.log(`Gamepad connected at index ${gamepad.index}: ${gamepad.id}.
+    //   ${gamepad.buttons.length} buttons, ${gamepad.axes.length} axes.`);
+    //   let interval;
+    //   if (!("ongamepadconnected" in window)) {
+    //     // No gamepad events available, poll instead.
+    //     interval = setInterval(pollGamepads, 100);
+    //   }
+    // });
+    // return () => window.removeEventListener("gamepadconnected", pollGamepads);
   }, [pageNumber]);
 
   return (
