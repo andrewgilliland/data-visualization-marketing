@@ -34,7 +34,7 @@ const BarChart: FC<BarChartProps> = ({
       <VictoryAxis tickLabelComponent={<VictoryLabel dy={10} />} />
       <VictoryBar
         animate={{
-          duration: 2000,
+          // duration: 500,
           onLoad: { duration: 1000 },
         }}
         style={{

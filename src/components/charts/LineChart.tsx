@@ -74,7 +74,7 @@ const LineChart: FC<LineChartProps> = () => {
           key={index}
           style={{ data: { stroke } }}
           animate={{
-            duration: 2000,
+            // duration: 500,
             onLoad: { duration: 1000 },
           }}
           data={data}
