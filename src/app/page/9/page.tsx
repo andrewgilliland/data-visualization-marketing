@@ -2,6 +2,7 @@ import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Text from "@/components/Text";
 import BarChart from "@/components/charts/BarChart";
 import colors from "tailwindcss/colors";
+import LineChart from "@/components/charts/LineChart";
 
 export default function PageNine() {
   return (
@@ -9,13 +10,13 @@ export default function PageNine() {
       <div className="flex h-60">
         <BarChart
           data={[
-            { x: "Biff", y: 2, fill: colors.blue[500] },
-            { x: "Tina", y: 3, fill: colors.green[500] },
-            { x: "Egon", y: 4, fill: colors.red[500] },
-            { x: "Whitney", y: 5, fill: colors.yellow[400] },
+            { x: "A", y: 2, fill: colors.blue[500] },
+            { x: "B", y: 3, fill: colors.green[500] },
+            { x: "C", y: 4, fill: colors.red[500] },
+            { x: "D", y: 5, fill: colors.yellow[400] },
           ]}
         />
-        <BarChart />
+        <LineChart />
         <BarChart />
       </div>
       <div className="mt-4">

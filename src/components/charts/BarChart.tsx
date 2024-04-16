@@ -1,11 +1,11 @@
 "use client";
+import { theme } from "@/styles/theme";
 import { FC } from "react";
 import colors from "tailwindcss/colors";
 import {
   VictoryChart,
   VictoryBar,
   VictoryTheme,
-  VictoryThemeDefinition,
   VictoryAxis,
   VictoryLabel,
 } from "victory";
@@ -23,31 +23,6 @@ const BarChart: FC<BarChartProps> = ({
   ],
 }) => {
   // console.log("victorytheme: ", VictoryTheme.material);
-
-  const theme: VictoryThemeDefinition = {
-    axis: {
-      style: {
-        tickLabels: {
-          fill: colors.slate[900],
-        },
-
-        axis: {
-          stroke: colors.slate[900],
-        },
-        grid: {
-          stroke: "transparent",
-        },
-      },
-    },
-    bar: {
-      style: {
-        data: {
-          fill: colors.blue[500],
-          width: 40,
-        },
-      },
-    },
-  };
 
   return (
     <VictoryChart theme={theme} domainPadding={30}>
