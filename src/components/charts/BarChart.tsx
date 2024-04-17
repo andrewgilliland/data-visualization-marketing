@@ -6,6 +6,7 @@ import { VictoryChart, VictoryBar, VictoryAxis, VictoryLabel } from "victory";
 
 type BarChartProps = {
   data?: { x: string; y: number; fill: string }[];
+  horizontalGridStrokeColor?: string;
 };
 
 const BarChart: FC<BarChartProps> = ({
@@ -15,10 +16,12 @@ const BarChart: FC<BarChartProps> = ({
     { x: "C", y: 4, fill: colors.red[500] },
     { x: "D", y: 5, fill: colors.yellow[400] },
   ],
+  horizontalGridStrokeColor = "transparent",
 }) => {
   return (
     <VictoryChart theme={theme} domainPadding={30}>
       <VictoryAxis
+        style={{ grid: { stroke: horizontalGridStrokeColor } }}
         dependentAxis
         tickLabelComponent={<VictoryLabel dx={-10} />}
         tickFormat={(tick: number) => `${Math.round(tick)}`}

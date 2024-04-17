@@ -1,14 +1,16 @@
+import Heading from "@/components/Heading";
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Table from "@/components/Table";
 import Text from "@/components/Text";
 
 export default function PageOne() {
-  const headings = ["Name", "Age", "Country"];
+  const headings = ["Name", "Sales"];
 
   const data = [
-    ["John Doe", "25", "USA"],
-    ["Jane Doe", "22", "UK"],
-    ["Sam Smith", "32", "Canada"],
+    ["Biff", 14000],
+    ["Tina", 32000],
+    ["Egon", 28000],
+    ["Whitney", 24000],
   ];
 
   return (
@@ -19,8 +21,9 @@ export default function PageOne() {
         &quot;Next&quot; button.
       </Text>
 
-      <div className="flex justify-center mt-16">
-        <Table headings={headings} data={data} />
+      <div className="flex flex-col justify-center items-center mt-16">
+        <Heading sectionLevel="h2">Sales Q1</Heading>
+        <Table className="mt-4" headings={headings} data={data} />
       </div>
     </ArticleLayout>
   );
