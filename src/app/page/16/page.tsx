@@ -18,7 +18,7 @@ export default function PageSixteen() {
           </div>
         </div>
       </div>
-      <div className="mt-4">
+      <div className="mt-8">
         <Text>
           Graphical display emphasizing relationships between elements of some
           space, such as geography, regions, or themes.
