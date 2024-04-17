@@ -1,17 +1,16 @@
+import Heading from "@/components/Heading";
 import ArticleLayout from "@/components/layouts/ArticleLayout";
 import Table from "@/components/Table";
 import Text from "@/components/Text";
 
 export default function PageFive() {
-  const headings = ["Name", "Age", "Country"];
+  const headings = ["Name", "July", "August", "September"];
 
   const data = [
-    ["John Doe", "25", "USA"],
-    ["Jane Doe", "22", "UK"],
-    ["Sam Smith", "32", "Canada"],
-    ["Alice Smith", "28", "Australia"],
-    ["Bob Smith", "30", "New Zealand"],
-    ["Charlie Smith", "29", "South Africa"],
+    ["Biff", 8000, 9000, 10000],
+    ["Tina", 10000, 9000, 9500],
+    ["Egon", 9000, 10000, 10000],
+    ["Whitney", 9000, 10000, 11000],
   ];
 
   return (
@@ -22,8 +21,9 @@ export default function PageFive() {
         &quot;Next&quot; button.
       </Text>
 
-      <div className="flex justify-center mt-16">
-        <Table headings={headings} data={data} />
+      <div className="flex flex-col justify-center items-center mt-16">
+        <Heading sectionLevel="h2">Sales Q3</Heading>
+        <Table className="mt-8" headings={headings} data={data} />
       </div>
     </ArticleLayout>
   );

@@ -10,18 +10,18 @@ export default function PageEight() {
 
       <div className="mt-8">
         <Question
-          question="1. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
+          question="1. Who had the lowest sales for Q4?"
+          answer="Egon"
         />
         <Question
           className="mt-4"
-          question="2. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
+          question="2. Who had the highest sales for Q4?"
+          answer="Whitney"
         />
         <Question
           className="mt-4"
-          question="3. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
+          question="3. Who is the better singer, Whitney Houston or Tina Turner?"
+          answer="That's like, just your opinion dude."
         />
       </div>
     </ArticleLayout>

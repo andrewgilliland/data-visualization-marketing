@@ -23,7 +23,7 @@ export default function PageOne() {
 
       <div className="flex flex-col justify-center items-center mt-16">
         <Heading sectionLevel="h2">Sales Q1</Heading>
-        <Table className="mt-4" headings={headings} data={data} />
+        <Table className="mt-8" headings={headings} data={data} />
       </div>
     </ArticleLayout>
   );

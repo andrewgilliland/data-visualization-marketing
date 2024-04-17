@@ -5,11 +5,15 @@ import colors from "tailwindcss/colors";
 import { VictoryAxis, VictoryChart, VictoryLabel, VictoryLine } from "victory";
 
 type LineChartProps = {
-  data?: { x: number; y: number }[];
+  dataset?: {
+    data: { x: number | string; y: number | string }[];
+    stroke: string;
+  }[];
+  domain?: [number, number];
 };
 
-const LineChart: FC<LineChartProps> = () => {
-  const dataset = [
+const LineChart: FC<LineChartProps> = ({
+  dataset = [
     {
       data: [
         { x: 1, y: 2 },
@@ -50,10 +54,11 @@ const LineChart: FC<LineChartProps> = () => {
       ],
       stroke: colors.yellow[400],
     },
-  ];
-
+  ],
+  domain,
+}) => {
   return (
-    <VictoryChart theme={theme}>
+    <VictoryChart theme={theme} domain={domain}>
       <VictoryAxis
         dependentAxis
         tickLabelComponent={<VictoryLabel dx={-10} />}
@@ -61,7 +66,7 @@ const LineChart: FC<LineChartProps> = () => {
       />
       <VictoryAxis
         tickLabelComponent={<VictoryLabel dy={10} />}
-        tickFormat={(tick: number) => `${Math.round(tick)}`}
+        // tickFormat={(tick: number) => `${Math.round(tick)}`}
       />
       {dataset.map(({ data, stroke }, index) => (
         <VictoryLine
