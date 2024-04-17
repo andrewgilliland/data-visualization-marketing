@@ -22,39 +22,39 @@ export default function PageTwelve() {
       </div>
       <div className="grid grid-cols-3 grid-rows-3 gap-6 mt-12">
         <div className="flex flex-col items-center">
-          <Heading sectionLevel="h2">Table</Heading>
+          <Heading sectionLevel="h2">Tables</Heading>
           <Table className="text-[8px] mt-8" />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Bar Chart</Heading>
+          <Heading sectionLevel="h2">Bar Charts</Heading>
           <BarChart />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Pie Chart</Heading>
+          <Heading sectionLevel="h2">Pie Charts</Heading>
           <PieChart />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Line Chart</Heading>
+          <Heading sectionLevel="h2">Line Charts</Heading>
           <LineChart />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Area Chart</Heading>
+          <Heading sectionLevel="h2">Area Charts</Heading>
           <AreaChart />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Stacked Bar Chart</Heading>
+          <Heading sectionLevel="h2">Stacked Bar Charts</Heading>
           <StackBarChart />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Scatter Plot</Heading>
+          <Heading sectionLevel="h2">Scatter Plots</Heading>
           <ScatterPlot />
         </div>
         <div className="flex flex-col justify-center items-center">
-          <Heading sectionLevel="h2">Histogram</Heading>
+          <Heading sectionLevel="h2">Histograms</Heading>
           <Histogram />
         </div>
         <div className="flex flex-col items-center">
-          <Heading sectionLevel="h2">Map</Heading>
+          <Heading sectionLevel="h2">Maps</Heading>
           <Map className="mt-8" />
         </div>
       </div>
