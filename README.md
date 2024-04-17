@@ -56,4 +56,6 @@
 
 ### 16 - Maps
 
+- Graphical display emphasizing relationships between elements of some space, such as geography, regions, or themes.
+
 ## 17 - Tools for Creating Data Visualizations

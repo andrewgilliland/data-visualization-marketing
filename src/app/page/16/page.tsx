@@ -20,16 +20,13 @@ export default function PageSixteen() {
       </div>
       <div className="mt-4">
         <Text>
-          Data visualization is a representation of data and information through
-          the use of graphics.
+          Graphical display emphasizing relationships between elements of some
+          space, such as geography, regions, or themes.
         </Text>
         <Text className="mt-2">
-          Charts, graphs, plots, maps, infographics are all types of data
-          visualizations.
-        </Text>
-        <Text className="mt-2">
-          These visual displays of data help communicate data relationships in a
-          way that is easy to digest.
+          Maps are visual representations of the world around us. They can be
+          used to show physical features, political boundaries, population
+          distribution, and more.
         </Text>
       </div>
     </ArticleLayout>
