@@ -9,19 +9,16 @@ export default function PageFour() {
       </p>
 
       <div className="mt-8">
+        <Question question="1. Who had the least sales Q2?" answer="Egon" />
         <Question
-          question="1. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
+          className="mt-4"
+          question="2. Who had the most sales Q2?"
+          answer="Whitney"
         />
         <Question
           className="mt-4"
-          question="2. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
-        />
-        <Question
-          className="mt-4"
-          question="3. Dignissimos, sequi, incidunt repellat, vero a mollitia provident porro ea necessitatibus culpa animi cum excepturi consequatur reiciendis nam?"
-          answer="True"
+          question="3. Who won more Grammy Awards, Whitney Houston or Tina Turner?"
+          answer="Tina Turner. Whitney Houston won 6, Tina Turner won 8."
         />
       </div>
     </ArticleLayout>

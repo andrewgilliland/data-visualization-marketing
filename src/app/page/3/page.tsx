@@ -14,7 +14,7 @@ export default function PageThree() {
       </Text>
 
       <div className="mt-8">
-        <Heading sectionLevel="h2">Sales Q1</Heading>
+        <Heading sectionLevel="h2">Sales Q2</Heading>
         <BarChart
           horizontalGridStrokeColor={colors.slate[400]}
           data={[
