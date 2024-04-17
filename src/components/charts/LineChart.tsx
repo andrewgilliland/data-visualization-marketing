@@ -2,13 +2,7 @@
 import { theme } from "@/styles/theme";
 import { FC } from "react";
 import colors from "tailwindcss/colors";
-import {
-  VictoryAxis,
-  VictoryChart,
-  VictoryLabel,
-  VictoryLine,
-  VictoryTheme,
-} from "victory";
+import { VictoryAxis, VictoryChart, VictoryLabel, VictoryLine } from "victory";
 
 type LineChartProps = {
   data?: { x: number; y: number }[];
@@ -74,7 +68,6 @@ const LineChart: FC<LineChartProps> = () => {
           key={index}
           style={{ data: { stroke } }}
           animate={{
-            // duration: 500,
             onLoad: { duration: 500 },
           }}
           data={data}

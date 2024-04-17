@@ -62,4 +62,13 @@ export const theme: VictoryThemeDefinition = {
       },
     },
   },
+  histogram: {
+    style: {
+      data: {
+        fill: colors.blue[500],
+        stroke: colors.slate[900],
+        strokeWidth: 1.5,
+      },
+    },
+  },
 };
