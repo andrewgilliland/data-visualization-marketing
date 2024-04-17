@@ -9,6 +9,7 @@ import AreaChart from "@/components/charts/AreaChart";
 import StackBarChart from "@/components/charts/StackedBarChart";
 import ScatterPlot from "@/components/charts/ScatterPlot";
 import Histogram from "@/components/charts/Histogram";
+import Map from "@/components/Map";
 
 export default function PageTwelve() {
   return (
@@ -52,9 +53,9 @@ export default function PageTwelve() {
           <Heading sectionLevel="h2">Histogram</Heading>
           <Histogram />
         </div>
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center">
           <Heading sectionLevel="h2">Map</Heading>
-          <ScatterPlot />
+          <Map className="mt-8" />
         </div>
       </div>
     </ArticleLayout>
