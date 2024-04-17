@@ -9,7 +9,7 @@ import AreaChart from "@/components/charts/AreaChart";
 import StackBarChart from "@/components/charts/StackedBarChart";
 import ScatterPlot from "@/components/charts/ScatterPlot";
 import Histogram from "@/components/charts/Histogram";
-import Map from "@/components/Map";
+import Map from "@/components/maps/Map";
 
 export default function PageTwelve() {
   return (
