@@ -14,10 +14,14 @@ import Map from "@/components/maps/Map";
 export default function PageTwelve() {
   return (
     <ArticleLayout title="Types of Data Visualizations" page={12}>
-      <div className="mt-4">
+      <div className="mt-8">
         <Text>
           The earliest forms of data visualization were largely used to assist
           in navigation, and can be traced back to pre-17th century in Egypt.
+          The first known use of data visualization was in the form of a map,
+          which was used to navigate the Nile River. Since then, data
+          visualization has evolved to include a wide range of techniques and
+          tools, each with its own unique strengths and weaknesses.
         </Text>
       </div>
       <div className="grid grid-cols-3 grid-rows-3 gap-6 mt-12">
