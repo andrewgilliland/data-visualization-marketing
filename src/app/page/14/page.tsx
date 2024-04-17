@@ -8,18 +8,17 @@ export default function PageFourteen() {
       <div className="h-64">
         <LineChart />
       </div>
-      <div className="mt-4">
-        <Text>
-          Data visualization is a representation of data and information through
-          the use of graphics.
+      <div className="mt-8">
+        <Text className="">
+          Line charts are graphical representations that illustrate trends and
+          patterns in numerical data.
         </Text>
-        <Text className="mt-2">
-          Charts, graphs, plots, maps, infographics are all types of data
-          visualizations.
+        <Text className="mt-4">
+          Line charts are useful ifor portraying continuous data over a specific
+          period.
         </Text>
-        <Text className="mt-2">
-          These visual displays of data help communicate data relationships in a
-          way that is easy to digest.
+        <Text className="mt-4">
+          They are also useful for showing relationships between two variables.
         </Text>
       </div>
     </ArticleLayout>
