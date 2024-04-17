@@ -8,18 +8,17 @@ export default function PageThirteen() {
       <div className="h-64">
         <BarChart />
       </div>
-      <div className="mt-4">
-        <Text>
-          Data visualization is a representation of data and information through
-          the use of graphics.
+      <div className="mt-8">
+        <Text>A bar graph shows comparisons among discrete categories.</Text>
+        <Text className="mt-4">
+          A bar chart is a chart with rectangular bars with lengths proportional
+          to the values that they represent. The bars can be plotted vertically
+          or horizontally.
         </Text>
-        <Text className="mt-2">
-          Charts, graphs, plots, maps, infographics are all types of data
-          visualizations.
-        </Text>
-        <Text className="mt-2">
-          These visual displays of data help communicate data relationships in a
-          way that is easy to digest.
+        <Text className="mt-4">
+          Bar charts provide a visual presentation of categorical data.
+          Categorical data is a grouping of data into discrete groups, such as
+          months of the year, age group, shoe sizes, and animals
         </Text>
       </div>
     </ArticleLayout>
