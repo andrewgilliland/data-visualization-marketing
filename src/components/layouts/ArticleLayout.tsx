@@ -77,7 +77,10 @@ const ArticleLayout: FC<BaseLayoutProps> = ({ title, children, page }) => {
           <Button iconPosition="left">Prev</Button>
         </Link>
 
-        <Link className={page === 1 ? "" : ""} href={`/page/${page + 1}`}>
+        <Link
+          className={page === 18 ? "invisible" : ""}
+          href={`/page/${page + 1}`}
+        >
           <Button>Next</Button>
         </Link>
       </div>
