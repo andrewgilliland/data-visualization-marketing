@@ -74,9 +74,13 @@ export default function PageFifteen() {
           A pie chart is a circular statistical graphic, which is divided into
           slices to illustrate numerical proportion.
         </Text>
-        <Text className="mt-2">
-          Charts, graphs, plots, maps, infographics are all types of data
-          visualizations.
+        <Text className="mt-4">
+          Pie charts can be used to show percentages of a whole, and represents
+          percentages at a set point in time.
+        </Text>
+        <Text className="mt-4">
+          Pie charts are also useful for showing the proportion of different
+          categories in a dataset.
         </Text>
       </div>
     </ArticleLayout>
